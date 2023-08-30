@@ -21,6 +21,8 @@
 
 # Approach - 2:
 
+# Using standard approach -
+
 list1 = [1, 1, 2, 2, 3, 4, 5, 5, 5, 5, 6]
 # list2 = list(dict.fromkeys(list1))
 list2 = list(set(list1))
@@ -36,3 +38,9 @@ for i in range(len(list1)):
             list4.append(list1[i])
 
 print("Final list", list4)
+
+# Approach - 3 -
+
+# Bubble sort -
+
+# Will continue
