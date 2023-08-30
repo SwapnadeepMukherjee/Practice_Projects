@@ -39,8 +39,3 @@ for i in range(len(list1)):
 
 print("Final list", list4)
 
-# Approach - 3 -
-
-# Bubble sort -
-
-# Will continue
