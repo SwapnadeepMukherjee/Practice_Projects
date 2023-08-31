@@ -14,6 +14,5 @@ class mynumber:
     def print_value(self):
         print(self.value)
 
-
 obj1 = mynumber(17)
 obj1.print_value()
