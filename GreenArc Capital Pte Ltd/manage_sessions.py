@@ -15,20 +15,20 @@
 
 # Sample program to demonstrate the same -
 
-# import requests
-#
-# a = requests.Session()
-# userName = {"userName": "Swapnadeep"}
-# location = {"location": "NewTown"}
-#
-# setCookieURL = "https://httpbin.org/cookies/set"
-# getCookieURL = "https://httpbin.org/cookies"
-#
-# a.get(setCookieURL, params=userName)
-# a.get(setCookieURL, params=location)
-#
-# r = a.get(getCookieURL)
-# print(r.text)
+import requests
+
+a = requests.Session()
+userName = {"userName": "Swapnadeep"}
+location = {"location": "NewTown"}
+
+setCookieURL = "https://httpbin.org/cookies/set"
+getCookieURL = "https://httpbin.org/cookies"
+
+a.get(setCookieURL, params=userName)
+a.get(setCookieURL, params=location)
+
+r = a.get(getCookieURL)
+print(r.text)
 
 
 # 2. Write a function/program to implement login functionality in Python -
@@ -36,44 +36,43 @@
 # # Solution reference -
 # # 1. https://bityl.co/Ks2l
 # # 2. https://ytube.io/3jMp
-#
-# def login(users):
-#     while True:
-#         username = input("Please enter your username")
-#         password = input("Please enter your password")
-#
-#         for u in users:
-#             if username == u[0]:
-#                 if password == u[1]:
-#                     return username
-#         print("Username or Password is incorrect, please try again later!")
-#
-# users = [['patrician', 'abc123'], ['dizzy', 'def456'], ['rygar', 'ghi789']]
-#
-# username = login(users)
-#
-# print(username, "has logged-in")
+
+def login(users):
+    while True:
+        username = input("Please enter your username")
+        password = input("Please enter your password")
+
+        for u in users:
+            if username == u[0]:
+                if password == u[1]:
+                    return username
+        print("Username or Password is incorrect, please try again later!")
+
+users = [['patrician', 'abc123'], ['dizzy', 'def456'], ['rygar', 'ghi789']]
+
+username = login(users)
+
+print(username, "has logged-in")
 
 # 3. Write a function/program to search for Anagrams from a list items.
 
 # Solution - https://ytube.io/3jDy
 
-# from collections import defaultdict
-# # from collections.abc import dict_values
-# from typing import Any
-#
-#
-# class Solution:0
-#     def groupAnagrams(self, strs: list[str]):
-#         # res = {} # mapping char-count to list of anagrams
-#         res = defaultdict(list)  # mapping char-count to list of anagrams
-#
-#         for s in strs:
-#             char_count = [0] * 26  # a..z
-#
-#             for c in s:
-#                 char_count[ord(c) - ord("a")] += 1
-#
-#             res[tuple(char_count)].append(s)
-#
-#         return res.values()
+from collections import defaultdict
+# from collections.abc import dict_values
+
+
+class Solution:
+    def groupAnagrams(self, strs: list[str]):
+        # res = {} # mapping char-count to list of anagrams
+        res = defaultdict(list)  # mapping char-count to list of anagrams
+
+        for s in strs:
+            char_count = [0] * 26  # a..z
+
+            for c in s:
+                char_count[ord(c) - ord("a")] += 1
+
+            res[tuple(char_count)].append(s)
+
+        return res.values()
