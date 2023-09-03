@@ -1,6 +1,8 @@
 # Problem - Given a list as follows -
+
 # list1 = [1,1,2,2,3,4,5,5,5,5,6]
-# `make a list of all duplicate elements
+
+# `WAP to make a list of all duplicate elements.
 
 # Approach - 1:
 
