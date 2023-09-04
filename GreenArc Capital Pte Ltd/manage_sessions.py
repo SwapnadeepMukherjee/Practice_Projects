@@ -33,9 +33,9 @@ print(r.text)
 
 # 2. Write a function/program to implement login functionality in Python -
 
-# # Solution reference -
-# # 1. https://bityl.co/Ks2l
-# # 2. https://ytube.io/3jMp
+# Solution reference -
+# 1. https://bityl.co/Ks2l
+# 2. https://ytube.io/3jMp
 
 def login(users):
     while True:
@@ -48,6 +48,7 @@ def login(users):
                     return username
         print("Username or Password is incorrect, please try again later!")
 
+
 users = [['patrician', 'abc123'], ['dizzy', 'def456'], ['rygar', 'ghi789']]
 
 username = login(users)
@@ -59,6 +60,8 @@ print(username, "has logged-in")
 # Solution - https://ytube.io/3jDy
 
 from collections import defaultdict
+
+
 # from collections.abc import dict_values
 
 
