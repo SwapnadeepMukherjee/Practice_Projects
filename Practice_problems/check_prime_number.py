@@ -1,6 +1,6 @@
-# Approach - 1 -
+# Question - WAP to check whether a number is prime or not using decorator.
 
-# Using Standard Approach -
+# Solution - Approach - 1 - Using Standard Approach -
 
 num = int(input("Please enter a number"))
 
@@ -18,7 +18,7 @@ if num > 1:
 else:
     print(num, "is not a prime number")
 
-# Approach - 2 -
+# Approach - 2 - Using decorator -
 
-# using decorator -
+# Yet to be completed.
 
