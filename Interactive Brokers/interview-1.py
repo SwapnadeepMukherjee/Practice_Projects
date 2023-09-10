@@ -23,7 +23,6 @@ from Wipro import interview_2
 
 # 10. What are the different data-types that you have used? - https://www.geeksforgeeks.org/python-data-types/
 
-# 11. What is generator function? - https://www.geeksforgeeks.org/cat-command-in-linux-with-examples/
+# 11. What is generator function? - https://www.geeksforgeeks.org/generators-in-python/,
 
 # 12. How can we divide a chunk of 1 million data into chunks of 10,000 and pass it in a function? - https://www.geeksforgeeks.org/generators-in-python/,
-# N
