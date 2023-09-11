@@ -1,4 +1,4 @@
-# Question 1:
+ # Question 1:
 #
 # Write a program to take an array as an input and print the count of the number of occurances of each element of the array.
 #
@@ -47,7 +47,8 @@ import pandas as pd
 df = pd.read_csv(
     "D:\Study\Data_Science_CourseWork\Academic_Data\Statistics & EDA\GDP Assesment\Video_Games_Sales_as_at_22_Dec_2016.csv")
 print("Initial dataframe", df)
-df1 = df.drop(df.head(0).index, inplace=True, axis=0)
+df1 = df.drop(df.head(1).index, inplace=True, axis=0)
 print("Modified dataframe", df1)
+
 
 # https://www.geeksforgeeks.org/remove-last-n-rows-of-a-pandas-dataframe/
