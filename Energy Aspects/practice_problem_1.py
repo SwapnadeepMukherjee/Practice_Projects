@@ -1,5 +1,5 @@
-# Problem - 1 -
-
+# Practice_Problem - 1 -
+#
 # Instruction
 # To be completed in 10 min
 # Implement a group_by_owners function that: Accepts a dictionary containing the file owner name for each file name.
