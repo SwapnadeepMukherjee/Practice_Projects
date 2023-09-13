@@ -20,8 +20,7 @@ class IceCreamMachine:
 
 
 machine = IceCreamMachine(["vanilla", "chocolate"], ["chocolate sauce"])
-print(machine.scoops())  # should print[['vanilla', 'chocolate sauce'], ['chocolate', 'chocolate sauce']]
-
+# print(machine.scoops())  # should print[['vanilla', 'chocolate sauce'], ['chocolate', 'chocolate sauce']]
 
 # 1. Solution Approach - Less Efficient/Nasty Approach(To be not taken just for clarification purpose) -
 
