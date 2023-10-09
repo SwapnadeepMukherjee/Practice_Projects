@@ -2,44 +2,45 @@
 
 # Solution Approach -
 
-# 1. First -
-
-import re
-
-desired_input = "I was 27 years 4 years ago"
-# output = [27, 4]
-
-output = re.findall('\d+', desired_input)
-print(output)
-
-# # 2. Second -
+# # 1. First -
 #
 # import re
 #
-#
-# def extract_numbers(string):
-#     numbers = re.findall(r'\d+', string)
-#     return list(numbers)
-#
-#
 # input_string = "I was 27 years 4 years ago"
-# numbers_list = extract_numbers(input_string)
-# print(numbers_list)
+# # output = [27, 4]
+#
+# output = re.findall('\d+', input_string)
+# print(output)
+
+# 2. Second -
+
+import re
+
+
+def extract_numbers(string):
+    numbers = re.findall(r'\d+', string)
+    return list(numbers)
+
+
+string = "I was 27 years 4 years ago"
+numbers_list = extract_numbers(string)
+print(numbers_list)
 
 # 2. Question - Given an array find the middlemost-element.
 
 import math
 
 in_array = []
-inp = int(input("Please enter your array length"))
+len_array = int(input("Please enter your array length"))
 
-for i in range(inp):
-    in_arr = input("Please enter element of the array")
-    in_array.append(in_arr)
+for i in range(len_array):
+    inp_array = input("Please enter element of the array")
+    in_array.append(inp_array)
 
-sort_in_arr = sorted(in_array)
+sort_in_array = sorted(in_array, reverse=False)
+print(sort_in_array)
 
-if inp % 2 == 0:
-    print(math.floor(int(sort_in_arr[int(inp / 2)])), math.floor(int(sort_in_arr[int(inp / 2 + 1)])))
+if len_array % 2 == 0:
+    print(sort_in_array[int(len_array / 2) - 1], sort_in_array[int(len_array / 2)])
 else:
-    print(math.floor(int(sort_in_arr[int(inp / 2)])))
+    print(sort_in_array[math.floor(len_array / 2)])
