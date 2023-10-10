@@ -44,3 +44,4 @@ if len_array % 2 == 0:
     print(sort_in_array[int(len_array / 2) - 1], sort_in_array[int(len_array / 2)])
 else:
     print(sort_in_array[math.floor(len_array / 2)])
+
