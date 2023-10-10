@@ -26,6 +26,7 @@ string = "I was 27 years 4 years ago"
 numbers_list = extract_numbers(string)
 print(numbers_list)
 
+
 # 2. Question - Given an array find the middlemost-element.
 
 import math
