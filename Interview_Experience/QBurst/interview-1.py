@@ -8,7 +8,7 @@
 
 
 # Feedback -
-#
+
 # Knowledge of general python libraries is average.
 # Programing skills is also very average.
 # Logical question failed output for one question and partially correct for others.
