@@ -6,7 +6,7 @@
 
 # 3. What is the Difference Between a Shallow Copy and Deep Copy?
 
-# 4. What is the difference between list and tuples in Python? which is more memory efficient and why?
+# 4. What is the difference between list and tuples in Python? Which is more memory efficient and why?
 
 # 5. What are decorators in Python?
 
@@ -16,7 +16,7 @@
 
 # 8. Discuss Django Architecture and explain how a Django project looks like.
 
-# 9.
+# 9. {placeholder-value}
 
 # 10. What are the drawbacks of ORM model?
 

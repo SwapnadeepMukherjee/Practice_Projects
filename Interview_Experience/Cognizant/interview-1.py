@@ -36,7 +36,7 @@ len_array = int(input("Please enter your array length"))
 
 for i in range(len_array):
     inp_array = input("Please enter element of the array")
-    in_array.append(inp_array)
+    in_array.append(int(inp_array))
 
 sort_in_array = sorted(in_array, reverse=False)
 print(sort_in_array)
