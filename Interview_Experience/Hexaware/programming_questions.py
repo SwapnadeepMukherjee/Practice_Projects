@@ -10,16 +10,17 @@ def twosum(arr, sum):
     left = 0
     right = len(arr) - 1
     while left <= right:
-        if arr[left] + arr[right] > sum:
+        if sorted_arr[left] + sorted_arr[right] > sum:
             right -= 1
-        elif arr[left] + arr[right] < sum:
+
+        elif sorted_arr[left] + sorted_arr[right] < sum:
             left += 1
-        elif arr[left] + arr[right] == sum:
-            print("Values of the pair are", arr[left], '&', arr[right])
+        elif sorted_arr[left] + sorted_arr[right] == sum:
+            print("Values of the pair are", sorted_arr[left], '&', sorted_arr[right])
             right -= 1
             left += 1
 
 
-rr = [5, 7, 4, 3, 9, 8, 19, 21]
+arr = [8, 4, 2, 6, 10, 12, 18, 15, 16, 24]
 sum = 12
-print(twosum(arr, sum))
+twosum(arr, sum)
