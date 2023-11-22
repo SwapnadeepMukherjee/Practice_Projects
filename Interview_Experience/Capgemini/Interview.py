@@ -9,7 +9,7 @@ convert_dict = zip(list1, list2)
 dict1 = dict(convert_dict)
 print(dict1)
 
-# zip_fucntion - https://www.w3schools.com/python/ref_func_zip.asp
+# Reference - https://www.w3schools.com/python/ref_func_zip.asp
 
 # ----------------------------------------|
 
@@ -26,7 +26,7 @@ print(list2[::-1])
 # input = "My name is Swapnadeep"
 # output = {m:2, y:1, n:1, a:3, ..}
 
-# Approach -1:
+# Approach - 1:
 
 # using naive method to get count
 # of each element in string
@@ -61,7 +61,7 @@ print("Count of all characters in " + test_str + " is :\n "
       + str(res))
 
 
-# https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/
+# Reference - https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/
 
 # ----------------------------------------|
 
@@ -91,6 +91,7 @@ print(copy.copy(ds_list))
 # DeepCopy -
 print(copy.deepcopy(ds_list))
 
+# Reference - https://www.geeksforgeeks.org/copy-python-deep-copy-shallow-copy/
 
 # ----------------------------------------|
 

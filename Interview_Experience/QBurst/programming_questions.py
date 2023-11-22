@@ -2,7 +2,7 @@
 #
 # # Solution Approaches:
 #
-# # 1. Simple example to explain decorator:
+# Approach - 1: Simple example to explain decorator:
 #
 # # Python program to illustrate functions can be treated as objects
 #
@@ -15,7 +15,7 @@
 # print(yell('Hello'))
 
 
-# 2. https://replit.com/@SwapnadeepMukherjee/59-Day-59-Decorators-in-Python -
+# Approach - 2: https://replit.com/@SwapnadeepMukherjee/59-Day-59-Decorators-in-Python -
 
 def greet(fx):
     def mfx(*args, **kwargs):
