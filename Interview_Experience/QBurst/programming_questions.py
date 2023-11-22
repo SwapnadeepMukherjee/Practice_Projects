@@ -1,4 +1,4 @@
-# # Problem -1 - WAP use a decorator function to demonstrate output of division by two numbers:
+# # Problem -1 - WAP use a decorator function to demonstrate output:
 #
 # # Solution Approaches:
 #
@@ -36,7 +36,7 @@ def add(a, b):
     print(a + b)
 
 
-hello()
+# hello()
 add(1, 2)
 greet(hello)()
 
