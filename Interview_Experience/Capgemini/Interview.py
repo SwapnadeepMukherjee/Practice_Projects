@@ -66,6 +66,7 @@ print("Count of all characters in " + test_str + " is :\n "
 # ----------------------------------------|
 
 # Explain Decorators with example -
+
 def greet(fx):
     def mfx(*args, **kwargs):
         print("good morning")
@@ -85,11 +86,11 @@ def hello():
 # DeepCopy vs ShallowCopy
 ds_list = [1, 2, 3, 4]
 
-# shallowCopy -
-print(copy.copy(ds_list))
+# ShallowCopy -
+print("ShallowCopy", copy.copy(ds_list))
 
 # DeepCopy -
-print(copy.deepcopy(ds_list))
+print("DeepCopy", copy.deepcopy(ds_list))
 
 # Reference - https://www.geeksforgeeks.org/copy-python-deep-copy-shallow-copy/
 
