@@ -1,6 +1,10 @@
 from collections import Counter
 
-# list of 0's and 1's
+# Problem-1: Count the number of 1's from a given list without any conditional opertions:
+
+# Solution:
+
+# Hint: using Arithmetic operations:
 
 input = [0,0,0,0,1,1,0,1,1]
 # output = 4
@@ -14,10 +18,10 @@ print(count)
 
 # --------------------------------------------
 
-# Problem - Frequency of each character in list:
+# Problem-2 - Frequency of each character in  in dictionary format:
 
 input = [0,2,3,4,4,5,6,8,8,9]
-# output = element with count
+# output = element with count in dict format.
 
 all_freq = {}
 
