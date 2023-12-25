@@ -23,6 +23,7 @@ print(count)
 input = [0,2,3,4,4,5,6,8,8,9]
 # output = element with count in dict format.
 
+
 all_freq = {}
 
 for i in input:
