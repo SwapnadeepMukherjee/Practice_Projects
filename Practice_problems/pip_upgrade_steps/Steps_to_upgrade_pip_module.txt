@@ -1,0 +1,7 @@
+Refer this articles' first approach:
+https://www.w3docs.com/snippets/python/how-to-upgrade-all-python-packages-with-pip.html
+
+Use either of the two of the following to remove the versions from the requirements file:
+
+1. "==[$0-9a-zA-Z \t\n]+"
+2. "==(\d+\.\d+\.\d+)"
