@@ -2,7 +2,7 @@
 
 # Dicuscssion Notes:	
 
-#   1. Keep the tell me about yourself part as crisp as possible. Include words such as Python and AWS.
+#	1. Keep the tell me about yourself part as crisp as possible. Include words such as Python and AWS.
 # 	2. 12 factor-app. - https://developer.ibm.com/articles/creating-a-12-factor-application-with-open-liberty/
 # 	3. Primary Components of Cloud.
 # 	4. Containerized Data-Structure.
