@@ -1,8 +1,10 @@
-# Design a url shoertner application like bit.ly. The application should posses the following API's:
+# Problem statement: 
+# Design a scalable URL shortener service (like Bit.ly). The application should posses the following API's:
 
-# 1. POST method: Input the long URL.
-# 2. GEt method: Get method to check the uniqueness.
-# 3. GET method: WIll get the final shortened URL 
+# 1. POST(/shorten) method: Accepts a long URL, returns a shortened URL.
+# 2. GET(/{short_code}) method: Redirects to the original URL.
+# 3. GET(/stats/{short_code}) method: Returns usage stats (number of hits, last accessed time, etc.)
+
 
 # Swapnadeep's initial Approach:
 
@@ -27,7 +29,8 @@ def post_long_url(self, original_url, list):
         else:
             reuturn 0
 
-# Swapandeep' AI approach:
+
+# Swapandeep' AI approach with FastAPI:
 
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
