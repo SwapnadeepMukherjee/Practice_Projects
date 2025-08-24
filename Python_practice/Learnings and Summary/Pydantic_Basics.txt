@@ -1,0 +1,14 @@
+Notes made from source: https://www.geeksforgeeks.org/python/introduction-to-python-pydantic-library/#what-is-pydantic
+
+- What is Pydantic?
+Pydantic is a Python library that helps us in defining and validating data models easily. Simply put, it is a data validation and settings management library that leverages Python's type annotations to provide powerful and easy-to-use tools for ensuring our data is in the correct format. 
+
+- Key Features of Pydantic:
+1. Type valiadtion.
+2. Data Parsing.
+3. Error handling.
+4. Field Validators.
+5. Performance: Pydantic is optimized for speed and supports optional Cython extensions for even faster performance.
+6. Integrartion: Easily integrates with popular frameworks like FastAPI, Django, Flask and ORMs like SQLAlchemy.
+
+- Core Concepts in Pydantic:
