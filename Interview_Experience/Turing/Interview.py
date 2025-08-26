@@ -16,4 +16,28 @@
 #   Custom execptions in Python allow us to create our specific error types to handle situations unique to out application domain. 
 #   This can improve code quality, make error handling much more granular and enchacnce reusability.
 
-#   More text needs to inserted on use-caseClass invalidInoutError:
+#   Designing a custom exception:
+
+#   To create a custom exception, we create a new class that inherits from built-in Exception class or one of it's sub-classes
+#   (like valueError or TypeError). It's a good practice to suffix the custom execption class name with "Error" for clartiy. 
+#   We can also customise it's behaviour by overriding the constructor (__init__) and other methods like it __str__
+
+class InvalidInputError(value): # inhertiing from VAlueError for clarity.
+    """Customer exception raised for invalid input values"""
+
+    def __init__(self, message, input_value=None):
+            super().__init__(message) #Call the parent classes constructor
+            self.input_value = input_value #Store the invalid input value
+    
+    def __str__(self): #Customise string representation of the exception
+          if self.input_value is not None:
+                return f"{self.args[0]} Provided input: {self.input_value}"
+          return self.args[0]
+    
+# Using the custom exception in a file:
+
+# We can use the raise keyword to explicality raise our customer exception within a fucntion when a speicific error condition is met:
+
+    def process_data(data):
+          if not isinstance(data, (int, float)):
+                raise InvalidInputError("Data must be number.", data) # Raising custom exception
