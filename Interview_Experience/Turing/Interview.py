@@ -10,3 +10,10 @@
 # 	3. Imagine you have huge dataset and we havse setup a Python code that is giving out correct output that is designed with nested loops only. How do you optimize the code? : Pandas, Numpy, List Comprehension, …
 # 	4. How will you design a Python application using Docker and write a docker file such that you don't have to manage pipeline manually and the dockerfile itself manages the sync between Production and non-production code? What are the parameters that you will use?
 # 	5. Design a custom exception that will define something and show the output by using it in a function in python.
+
+#   Answer to question 5:
+
+#   Custom execptions in Python allow us to create our specific error types to handle situations unique to out application domain. 
+#   This can improve code quality, make error handling much more granular and enchacnce reusability.
+
+#   More text needs to inserted on use-caseClass invalidInoutError:
