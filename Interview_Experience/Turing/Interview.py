@@ -22,6 +22,18 @@
 #   (like valueError or TypeError). It's a good practice to suffix the custom execption class name with "Error" for clartiy. 
 #   We can also customise it's behaviour by overriding the constructor (__init__) and other methods like it __str__
 
+#   Syntax:
+#   class CustomError(Exception):
+#   ...
+#   pass
+
+#   try:
+#   ...
+
+#   except CustomError:
+#   ...
+
+#   Sample Exception:
 class InvalidInputError(value): # inhertiing from VAlueError for clarity.
     """Customer exception raised for invalid input values"""
 
@@ -36,8 +48,26 @@ class InvalidInputError(value): # inhertiing from VAlueError for clarity.
     
 # Using the custom exception in a file:
 
-# We can use the raise keyword to explicality raise our customer exception within a fucntion when a speicific error condition is met:
+# We can use the raise keyword to explicitly raise your custom exception within a function when a specific error condition is met.
 
-    def process_data(data):
-          if not isinstance(data, (int, float)):
-                raise InvalidInputError("Data must be number.", data) # Raising custom exception
+def process_data(data):
+    if not isinstance(data, (int, float)):
+        raise InvalidInputError("Data must be a number.", data)  # Raising the custom exception
+    if data <= 0:
+        raise InvalidInputError("Data must be positive.", data)
+
+    return data * 2
+
+# Simple example to understand this custom exception using eligible voter example:
+class AgeError(Exception):
+    "Raised when persons age is less than 18"
+    pass
+
+try:
+    age = int(input("Enter age:"))
+    if age < 18:
+        raise AgeError
+except AgeError:
+    print("person is ineligible to caste their vote")     
+else:
+    print("person is eligable to caste their vote")
