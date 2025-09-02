@@ -34,7 +34,7 @@
 #   ...
 
 #   Sample Exception:
-class InvalidInputError(value): # inhertiing from VAlueError for clarity.
+class InvalidInputError(ValueError): # inhertiing from VAlueError for clarity.
     """Customer exception raised for invalid input values"""
 
     def __init__(self, message, input_value=None):
