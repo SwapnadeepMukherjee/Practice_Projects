@@ -1,0 +1,27 @@
+import boto3
+import os
+
+ACCOUNT_ID = "788531719687"
+ROLE_NAME = "ArtifactUploadRole"
+BUCKET_NAME = "swapnadeep-s3-bucket-encryption"
+FILE_PATH = "app_log.txt"
+
+sts = boto3.client('sts')
+
+assumed_role = sts.assume_role(
+    RoleArn=f'arn:aws:iam::{ACCOUNT_ID}:role/{ROLE_NAME}',
+    RoleSessionName='AssumeRoleSession',
+    DurationSeconds=3600
+)
+
+credentials = assumed_role['Credentials']
+
+# s3 = boto3.client('s3',
+#     aws_access_key_id=credentials['AccessKeyId'],
+#     aws_secret_access_key=credentials['SecretAccessKey'],
+#     aws_session_token=credentials['SessionToken']
+# )   
+
+# s3.upload_file(FILE_PATH, BUCKET_NAME, os.path.basename(FILE_PATH))
+
+print("Upload successful using temporary credentials from STS.")
