@@ -1,0 +1,9 @@
+Uploading log file to S3...
+Upload complete.
+Listing files in S3 bucket...
+ - app_log.txt (Last Modified: 2026-02-25 03:56:31+00:00)
+ - beach.jpg (Last Modified: 2023-04-29 19:39:30+00:00)
+Downloading latest log file from S3...
+Latest file downloaded: app_log.txt
+Downloaded file path: C:\Users\swapn\AppData\Local\Temp\app_log.txt
+Downloaded app_log.txt to C:\Users\swapn\AppData\Local\Temp\app_log.txt

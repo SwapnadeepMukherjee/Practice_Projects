@@ -7,7 +7,7 @@ import tempfile
 # LOCAL_LOG_FILE = os.path.join(BASE_DIR, 'app_log.txt')
 BUCKET_NAME = "s3-swapnadeep-bucket-origin-v2"
 # LOCAL_LOG_FILE = 'app_log.txt'
-LOCAL_LOG_FILE =r'D:\Career\Personal_Study_Data\Github_Master\Practice_Projects\AWS_Automation\app_log.txt'
+LOCAL_LOG_FILE =r'D:\Career\Personal_Study_Data\Github_Master\Practice_Projects\AWS_Automation\s3_bucket\app_log.txt'
 DOWNLOAD_DIR = tempfile.gettempdir()
 
 s3 = boto3.client('s3')
