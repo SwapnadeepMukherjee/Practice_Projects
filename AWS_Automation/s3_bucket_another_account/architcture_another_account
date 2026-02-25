@@ -1,0 +1,9 @@
+Source Account (CI/CD / EC2 / Local)
+        |
+        |  sts:AssumeRole
+        ↓
+Target Account (S3 Bucket)
+        |
+        |  Temporary Credentials
+        ↓
+Upload to S3
