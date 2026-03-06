@@ -1,0 +1,5 @@
+EventBridge (10 PM daily)
+        ↓
+Lambda Function
+        ↓
+Stop EC2 Instances (filtered by tag)
