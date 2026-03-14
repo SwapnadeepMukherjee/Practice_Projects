@@ -1,3 +1,7 @@
+# What are decorators in Python? Explain with example.
+
+# Decorators are funtions that modify function behaviour without changing the function.
+
 # Example: 1
 
 def my_decorator(func):
@@ -56,3 +60,8 @@ print("done")
 # Took 1.3050940036773682 seconds
 # Took 1.3010389804840088 seconds
 # done
+
+# sources:
+
+#https://www.datacamp.com/blog/top-python-interview-questions-and-answers
+#https://www.geeksforgeeks.org/python/decorators-in-python/ - Needs further read.

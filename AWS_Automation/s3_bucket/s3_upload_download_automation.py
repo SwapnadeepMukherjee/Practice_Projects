@@ -26,6 +26,7 @@ print("Upload complete.")
 #Listing files in S3 bucket:
 print("Listing files in S3 bucket...")
 response = s3.list_objects_v2(Bucket=BUCKET_NAME)
+print(response)
 
 if 'Contents' in response:
     for obj in response['Contents']:
@@ -38,7 +39,7 @@ print("Downloading latest log file from S3...")
 if 'Contents' in response:
     latest_file = max(response['Contents'], key=lambda x: x['LastModified'])
     s3.download_file(BUCKET_NAME, latest_file['Key'], os.path.join(DOWNLOAD_DIR, latest_file['Key']))
-    # print(f"Downloaded {latest_file['Key']} to {DOWNLOAD_DIR}")
+    print(f"Downloaded {latest_file['Key']} to {DOWNLOAD_DIR}")
 
     latest_key = latest_file['Key']
     print(f"Latest file downloaded: {latest_key}")
