@@ -4,6 +4,15 @@
 
 # Typically, I would use Python modules like re (regular expressions) for pattern matching and file handling to process large log files efficiently.
 
+# Approach - 1: 
+
+with open("app.log") as f:
+    for line in f:
+        if "ERROR" in line:
+            print(line)
+
+# Aprroach-3: Basic Log Parsing:
+
 error_count = 0
 
 with open('logfile.log', 'r') as log_file:
@@ -13,3 +22,7 @@ with open('logfile.log', 'r') as log_file:
             print(f"Error found: {line.strip()}")
 
 print(f"Total errors found: {error_count}")
+
+# Approach-3: Using regular expressions to extract timestamps and error messages:
+
+# ...
